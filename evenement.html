@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./css/header.css" type="text/css">
+        <link rel="stylesheet" href="./css/evenement.css" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Evenement</title>
+        <script>
+            function map() {
+                var mapelement2 = document.getElementById("body");
+                var mapelement3 = document.getElementById("map");
+                if (mapelement3.classList.contains('non-active')){
+                    mapelement2.classList.add("non-active-body");
+                    mapelement3.classList.remove("non-active");
+                } else {
+                    mapelement2.classList.remove("non-active-body");
+                    mapelement3.classList.add("non-active");
+                }
+            }
+        </script>
+        <style>
+            .header-h1 {
+                position: absolute;
+                width: 371px;
+                height: 114px;
+                left: 213px;
+                top: 156px;
+                text-align: center;
+                line-height: 107px;
+            }
+            .header {
+                overflow: hidden;
+                width: 1440px;
+                margin-left: auto;
+                margin-right: auto;
+                position: relative;
+                height: 550px;
+                background: linear-gradient(90deg,#e4f7fb 0%, rgba(0,0,0,0) 5%,rgba(0,0,0,0) 95%, #e4f7fb 100%,#e4f7fb), url('img/header image 2.png') no-repeat;
+            }
+            .header_vague {
+                position: absolute;
+                width: 3385px;
+                height: 209px;
+                left: -1003px;
+                top: 432px;
+            }
+            .texte2 {
+                background: #cbf1f8 !important;
+                z-index: 999999;
+            }
+            .texte1 {
+                background: #e4f7fb !important;
+            }
+            .texte3 {
+                background: #e4f7fb !important;
+            }
+            footer{
+                background: rgba(202, 240, 248, 0.99)!important;
+            }
+            body {
+                background: #e4f7fb !important;
+            }
+        </style>
+    </head>
+
+    <!--le header -->
+    <body id="body" class="">
+        <nav class="navbar">
+            <div class="nav">
+                <div class="navbar-logo-head">
+                    <a href="index.html" class="navbar-logo"><img src="img/logo.png" style="width: 128px;"></a>
+                </div>
+                <div class="navbar-items">
+                    <a href="index.html">Accueil</a>
+                    <a href="evenement.html" class="effet-hover-nav active">événement</a>
+                    <a href="inscription.html">Inscription</a>
+                    <a href="marche.html">Marché du sport</a>
+                    <a href="contact.html" class="no-margin">Contact</a>
+                </div>
+            </div>
+        </nav>
+        <header>
+            <div class="header">
+                <h1></h1>
+                <div class="header-h1">
+                    <h1>L’évènement</h1>
+                </div>
+                <img src="img/logo-iut.png" class="header-logo-iut">
+                <img src="img/header-evenement.svg" class="header_vague">
+            </div>
+        </header>
+        <section class="texte1">
+            <div class="mid">
+                <h1>Quel est cet événement</h1>
+                <p><img src="images/texte1.png">Cet événement est l'événement de l'année ! Championnat de beach-volley organisé par l'IUT de Calais, il a des objectifs bénévoles, car il soutient une association à but non lucratif. L’argent qui sera gagné grâce aux repas et boissons sera reversé à l’association Ligue des protections des animaux de Calais. L'événement est aussi là pour que vous, chers élèves, passiez un bon moment et réussissez à créer de bonnes relations entre professeurs et élèves ! Mais également, pour bien débuter l'année !</p>
+            </div>
+        </section>
+
+        <section class="texte2">
+            <div class="mid">
+                <h1>Pourquoi cet événement</h1>
+                <p>Cet événement a été organisé pour réunir les élèves après l’éloignement dû à la covid-19. Elle n’a pas seulement pour but de réunir les élèves, elle a aussi pour but de protéger la faune et la flore surtout les phoques qui ont une importance notre littoral. Mais bien sûr pour permettre d'animer l'IUT et la ville de Calais autour de ses belles plages et d'un sport qui réunit !</p>
+                <img src="images/texte2.png">
+                <h2>Nos Objectifs</h2>
+                <ul>
+                    <li>Réunir tous les départements de l’IUT</li>
+                    <li>Crée des liens</li>
+                    <li>Soutenir l’association LPA</li>
+                </ul>
+                <h2>Nos partenaires</h2>
+                <ul>
+                    <li><a href="https://www.decathlon.fr/">Decathlon</a> : Prêt du matérie</li>
+                    <li><a href="https://www.carrefour.fr/">Carrefour</a> : Fournit les boissons</li>
+                    <li><a href="https://www.google.fr/search?q=boulangerie+LaMothe+calais&btnK=Recherche+Google">LaMotte</a> : Fournit les repas</li>
+                    <li><a href="https://www.calais.fr/fr/">Mairie de Calais</a> : Fournit l’accès à la plage</li>
+                    <li><a href="https://www.lpa-calais.org/">Ligue de protection des animaux</a> : Soutiens les animaux et les phoques !!!</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="texte3">
+            <div class="mid">
+                <h1>Organisation </h1>
+                <p>Aucun cours n’aura lieu pendant ces deux journées de Beach Volley du 6 et 7 septembre, mais seulement si vous y participez !
+                    Cependant, vous devrez obligatoirement venir durant les deux jours si vous êtes inscrit, même étant éliminé. Malheuresement il n’y a rien a gagner on est juste ici pour s’amuser !
+                    L'événement de beach-volley s'organise sous un championnat de cette manière :
+                </p>
+                <ul>
+                    <li>1er Jour -> Qualification</li>
+                    <li>2ême Jour -> Quart de final | Demi-finale | Final | Podium</li>
+                </ul>
+                <p>Les parties commenceront de 10H à 12H le matin, avec une pause-déjeuner à 12H00, des sandwichs vous seront proposés par la boulangerie Lamotte et des boissons par Carrefour le prix des menus sera de 4€ et l'ensemble des bénéfices seront reversés à l'association LPA. Les jeux reprendront à 13H jusqu’à 14H durant ces deux jours.</p>
+                <a href="inscription.html">Inscris-toi !</a>
+            </div>
+        </section>
+
+        <section class="texte4" style="padding-bottom:197px;">
+            <div class="mid">
+                <h1>Règlement</h1>
+                <p>Dans un match de beach-volley, deux équipes s’affrontent en renvoyant, tour à tour, le ballon par-dessus le filet. Chaque équipe est composée de deux joueurs. Un match se joue en 2 groupes gagnants. Les deux premières manches se jouent en 21 points alors que la manche décisive se joue en seulement 15 points (il faut deux points d’avance pour remporter le match au-delà de 15).</p>
+                <p>Le ballon doit être obligatoirement frappé pour être considéré comme valide. Les ballons d’attaque du bout des doigts sont considérés comme des fautes. De plus, le ballon peut être frappé avec toutes les parties du corps. On utilise couramment les mains et les avants bras pour renvoyer le ballon.</p>
+                <p>Enfin, il faut savoir qu’une seule tentative de service est permise dans un match de beach-volley. Au moment du service, le joueur au filet fait des signes dans son dos pour mettre en place la tactique et guider le serveur. Cette information permet au serveur d’anticiper la zone à défendre sur le renvoi de l’équipe adverse.</p>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer">
+                <img src="img/vague_footer.svg" class="footer_vague">
+                <span class="copyright">© 2021 beach-volley.iut.fr. Tous les droits réservés.</span>
+                <div class="legal">
+                    <a href="mention_legales.html">Mentions légales</a>
+                    <a class="droite" href="cgu.html">CGU</a>
+                </div>
+                <div class="icones">
+                    <a href="https://www.facebook.com/IUTinfoCalais/?ref=page_internal"><img src="img/facebook-icon.png" class="icone"></a>
+                    <a href="https://twitter.com/iutlco_info"><img src="img/twitter-icon.png" class="icone"></a>
+                    <a href="#map" id="mapbouton" onclick="map()" class=""><img src="img/map-icon.png" class="icone"></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <div id="map" class="non-active">
+        <span id="subs-close" onclick="map()" class="close">&times;</span>
+        <img id="map" src="img/map.png"></div>
+    </div>
+</html>

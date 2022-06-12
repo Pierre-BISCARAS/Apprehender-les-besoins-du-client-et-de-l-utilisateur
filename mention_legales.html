@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/header.css">
+        <link rel=stylesheet type="text/css" href="../css/mention.css">
+        <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap%27" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap%27" rel="stylesheet">
+        <title>Mentions Légales</title>
+    </head>
+    <script>
+        function prec() {
+            var element1 = document.getElementById("1");
+            var element2 = document.getElementById("2");
+            var element3 = document.getElementById("3");
+            var element4 = document.getElementById("4");
+            var element5 = document.getElementById("5");
+            var element6 = document.getElementById("6");
+            if (element1.classList.contains('non-active')){
+                element1.classList.remove("non-active");
+                element2.classList.remove("non-active");
+                element3.classList.remove("non-active");
+                element4.classList.add("non-active");
+                element5.classList.add("non-active");
+                element6.classList.add("non-active");
+            } else {
+                element1.classList.add("non-active");
+                element2.classList.add("non-active");
+                element3.classList.add("non-active");
+                element4.classList.remove("non-active");
+                element5.classList.remove("non-active");
+                element6.classList.remove("non-active");
+            }
+        }
+        function suiv() {
+            var element1 = document.getElementById("1");
+            var element2 = document.getElementById("2");
+            var element3 = document.getElementById("3");
+            var element4 = document.getElementById("4");
+            var element5 = document.getElementById("5");
+            var element6 = document.getElementById("6");
+            if (element1.classList.contains('non-active')){
+                element1.classList.remove("non-active");
+                element2.classList.remove("non-active");
+                element3.classList.remove("non-active");
+                element4.classList.add("non-active");
+                element5.classList.add("non-active");
+                element6.classList.add("non-active");
+            } else {
+                element1.classList.add("non-active");
+                element2.classList.add("non-active");
+                element3.classList.add("non-active");
+                element4.classList.remove("non-active");
+                element5.classList.remove("non-active");
+                element6.classList.remove("non-active");
+            }
+        }
+    </script>
+    <script>
+        function map() {
+            var mapelement2 = document.getElementById("body");
+            var mapelement3 = document.getElementById("map");
+            if (mapelement3.classList.contains('non-active')){
+                mapelement2.classList.add("non-active-body");
+                mapelement3.classList.remove("non-active");
+            } else {
+                mapelement2.classList.remove("non-active-body");
+                mapelement3.classList.add("non-active");
+            }
+        }
+    </script>
+    <style>
+        .header-h1 {
+            position: absolute;
+            width: 552px;
+            height: 107px;
+            left: 122px;
+            top: 156px;
+            text-align: center;
+        }
+        .header {
+                overflow: hidden;
+                width: 1440px;
+                margin-left: auto;
+                margin-right: auto;
+                position: relative;
+                height: 550px;
+                background: linear-gradient(90deg,#fff 0%, rgba(0,0,0,0) 5%,rgba(0,0,0,0) 95%,#fff 100%,#fff), url('img/header image 2.png') no-repeat;
+            }
+        .header_vague {
+            position: absolute;
+            width: 3234px;
+            height: 210.11px;
+            left: -842px;
+            top: 384.79px;
+        }
+        body {
+            background-color: #fff;
+        }
+        footer {
+            background-color: #fff;
+        }
+        html {
+            background-color: #fff;
+        }
+    </style>
+    <body id="body" class="">
+        <nav class="navbar">
+            <div class="nav">
+                <div class="navbar-logo-head">
+                    <a href="index.html" class="navbar-logo"><img src="img/logo.png" style="width: 128px;"></a>
+                </div>
+                <div class="navbar-items">
+                    <a href="index.html">Accueil</a>
+                    <a href="evenement.html" class="effet-hover-nav">événement</a>
+                    <a href="inscription.html">Inscription</a>
+                    <a href="marche.html">Marché du sport</a>
+                    <a href="contact.html" class="no-margin">Contact</a>
+                </div>
+            </div>
+        </nav>
+        <header>
+            <div class="header">
+                <h1></h1>
+                <div class="header-h1">
+                    <h1>Mentions legales</h1>
+                </div>
+                <img src="img/logo-iut.png" class="header-logo-iut">
+                <img src="img/vague_marche.svg" class="header_vague">
+            </div>
+        </header>
+        <section class="mid">
+            <h1>Nos mentions légales</h1>
+            
+
+            <p><a href=beach-volley.iut.fr>beach-volley.iut.fr</a> est un service édité par Université du Littoral de Calais</p>
+                <h2>Informations légales :</h2>
+                <p class="haut bas"> Webmaster : Marguerite Fernandez</p>
+                <p class="haut bas">Adresse e-mail : iutinfo@univ-littoral.fr.</p>
+                <p class="haut bas">Le directeur de publication du site est joignable à l'adresse contact@univ-littoral.fr</p>
+                <h2>Informations personnelles collectées :</h2>
+                <p class="haut"><a href=BEACH-VOLLEY.IUT.FR>BEACH-VOLLEY.IUT.FR</a> ne collecte des informations personneles saisies dans le formulaire d’inscription, notamment, le nom, le prenom, l’adresse électronique, le genre et le département au sein du parc Ulco, Chaque utilisateur est conscient qu'il fournit en toute connaissance de cause toutes les informations saisie par lui même ou non.</p>
+                <p>Nous ne collectons, publions ou échangeons aucune donnée à l'insu de l'utisateur.</p>
+        </section>
+        <footer>
+            <div class="footer" style="margin-top:197px;">
+                <img src="img/vague_footer.svg" class="footer_vague">
+                <span class="copyright">© 2021 beach-volley.iut.fr. Tous les droits réservés.</span>
+                <div class="legal">
+                    <a href="mention_legales.html">Mentions légales</a>
+                    <a class="droite" href="cgu.html">CGU</a>
+                </div>
+                <div class="icones">
+                    <a href="https://www.facebook.com/IUTinfoCalais/?ref=page_internal"><img src="img/facebook-icon.png" class="icone"></a>
+                    <a href="https://twitter.com/iutlco_info"><img src="img/twitter-icon.png" class="icone"></a>
+                    <a href="#map" id="mapbouton" onclick="map()" class=""><img src="img/map-icon.png" class="icone"></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <div id="map" class="non-active">
+        <span id="subs-close" onclick="map()" class="close">&times;</span>
+        <img id="map" src="img/map.png"></div>
+    </div>
+</html>

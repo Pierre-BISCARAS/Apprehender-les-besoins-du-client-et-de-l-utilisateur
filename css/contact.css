@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
+
+* {
+    font-style: normal;
+    font-weight: normal;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    zoom:80%
+}
+
+h1 {
+    font-size: 40px;
+    font-family: Oswald, sans-serif;
+    margin-bottom: 0;
+    margin-top: 0;
+    border-bottom: solid 4px #F6DC84;
+    display: inline-block;
+    padding-top: 40px;
+}
+
+.mid {
+    width: 1215px;
+    margin: 0 auto;
+}
+
+section {
+    text-align: center;
+}
+
+p {
+    text-align: left;
+    font-size: 24px;
+    line-height: 60px;
+    font-family: Be Vietnam Pro;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.propos img {
+    margin-bottom: 64px;
+}
+
+.contact img {
+    float: right;
+    margin-left: 128px;
+}
+
+.oui {
+    text-align: left;
+}
+
+.oui h1 {
+    margin-left: 24px;
+}
+.contact p {
+    font-family: Be Vietnam Pro;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.contact span {
+    font-weight: bold;
+    text-decoration-line: underline;
+}
+

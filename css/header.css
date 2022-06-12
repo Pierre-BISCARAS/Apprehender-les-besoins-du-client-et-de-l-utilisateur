@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
+
+* {
+    font-style: normal;
+    font-weight: normal;
+}
+.non-active-body {
+    z-index: 9999;
+    opacity: 50;
+}
+#map {
+    width: 1200px !important;
+    height: auto;
+    position:absolute;
+    top: 100px;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    z-index: 1000;
+    box-shadow: 0px 0px 5000px 5000px rgba(0, 0, 0, 0.2);
+}
+#map .close {
+    cursor: pointer;
+    position: absolute;
+    font-size: 90px;
+    top: 120px;
+    right: 10px;
+    background: #fff;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+        rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    z-index: 1001
+}
+#map img{
+    border-radius: 24px;
+    border:10px solid  rgba(72, 202, 228, 0.4);
+}
+.non-active {
+    display:none;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #CAF0F8;
+    zoom: 80%;
+}
+.header_vague {
+    position: absolute;
+    width: 3419px;
+    height: 174px;
+    left: -1205px;
+    top: 391px;
+}
+.header-h1 {
+    position: absolute;
+    width: 912px;
+    height: 107px;
+    left: 28px;
+    top: 156px;
+    text-align: center;
+}
+header h1 {
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 107px;
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+header h2 {
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 59px;
+    color: #fff;
+}
+.header-h2 {
+    position: absolute;
+    width: 458px;
+    height: 59px;
+    left: 255px;
+    top: 242px;
+    text-align: center;
+}
+header button {
+    border: 3px solid #48CAE4;
+}
+header .cta {
+    position: absolute;
+    width: 269.11px;
+    height: 62.61px;
+    margin-left: 349px;
+    margin-top: 309px;
+    font-family: Be Vietnam Pro;
+    font-style: normal;
+    background: #fff;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 32px;
+    color: #48CAE4;
+    text-decoration: none;
+    z-index: 1;
+    -moz-osx-font-smoothing: grayscale;
+}
+header .header-logo-iut {
+    position: absolute;
+    width: 212px;
+    height: 80px;
+    left: 1228px;
+    top: 156px;
+}
+.navbar {
+    position: absolute;
+    width: 100%;
+    height: 152.6px;
+    left: 0px;
+    top: 0px;
+    letter-spacing: 3px;
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 99999;
+}
+.nav {
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header {
+    overflow: hidden;
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    height: 550px;
+    background: linear-gradient(90deg,#CAF0F8 0%, rgba(255,255,255,0%) 5%,rgba(255,255,255,0%) 95%, #CAF0F8 100%,#CAF0F8), url('../img/header image 2.png') no-repeat;
+}
+.container {
+    overflow: hidden;
+    width: 1440px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.row {
+    position: relative;
+    padding-top: 44px;
+    padding-left: 112px;
+    padding-right: 112px;
+    padding-bottom: 44Px;
+}
+.navbar-items {
+    float: left;
+}
+
+.navbar-items a {
+    text-decoration: none;
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 44px;
+    margin-left: 60px;
+    line-height: 53px;
+    position: relative;
+    border-bottom: solid 2px transparent;
+    z-index: 1;
+    transition: border-bottom 0.4s ease-in;
+}
+.navbar-items .active {
+    border-bottom: solid 2px #fff;
+    position: relative;
+    z-index: 1;
+}
+.navbar-items .active::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    vertical-align: middle;
+    border-bottom: solid 2px #fff;
+    width: 75%;
+    min-height: 100%;
+    left: 12.5%;
+    right: 12.5%;
+    z-index: 10;
+}
+.navbar-items a:hover:not(.active)::before{
+    animation-duration: 0.4s;
+    animation-name: double_bar_navbar;
+    content: "";
+    position: absolute;
+    top: 6px;
+    vertical-align: middle;
+    border-bottom: solid 2px #fff;
+    width: 75%;
+    min-height: 100%;
+    left: 12.5%;
+    right: 12.5%;
+    z-index: 10;
+}
+.navbar-items a:not(.active)::before{
+    animation-duration: 0.4s;
+    animation-name: double_bar_navbar_out;
+    content: "";
+    position: absolute;
+    top: 6px;
+    vertical-align: middle;
+    border-bottom: solid 0px transparent;
+    width: 75%;
+    min-height: 100%;
+    left: 12.5%;
+    right: 12.5%;
+    z-index: 10;
+}
+.navbar-items a:hover::after{
+    animation-duration: 0.4s;
+    animation-name: une_double_bar_navbar;
+    content: "";
+    position: absolute;
+    top: 0px;
+    vertical-align: middle;
+    border-bottom: solid 2px #fff;
+    left: 0%;
+    right: 0%;
+    min-height: 100%;
+    z-index: 10;
+}
+.navbar-items a::after{
+    animation-duration: 0.4s;
+    animation-name: une_double_bar_navbar_out;
+    content: "";
+    position: absolute;
+    top: 0px;
+    vertical-align: middle;
+    border-bottom: solid 0px transparent;
+    left: 0%;
+    right: 0%;
+    min-height: 100%;
+    z-index: 10;
+}
+@keyframes une_double_bar_navbar {
+    0% { 
+        width: 0%;
+        right: 100%;
+        border-bottom: solid 2px #fff;
+    }
+    25% {
+        right: 75%;
+        width: 25%;
+        border-bottom: solid 2px #fff;
+    }
+    100% { 
+        right: 0%;
+        width: 100%;
+        border-bottom: solid 2px #fff;
+    }
+}
+@keyframes une_double_bar_navbar_out {
+    0% { 
+        width: 100%;
+        right: 0%;
+        border-bottom: solid 2px #fff;
+    }
+    25% {
+        width: 75%;
+        right: 25%;
+        border-bottom: solid 2px #fff;
+    }
+    75% {
+        width: 25%;
+        right: 75%;
+        border-bottom: solid 2px #fff;
+    }
+    100% { 
+        right: 100%;
+        width: 0%;
+        border-bottom: solid 2px #fff;
+    }
+}
+.non-active-body {
+    z-index: 9999;
+    opacity: 50;
+}
+#map {
+    width: 1800px;
+    height: auto;
+    position:absolute;
+    top: 100px;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    z-index: 1000;
+    box-shadow: 0px 0px 5000px 5000px rgba(0, 0, 0, 0.2);
+}
+#map .close {
+    cursor: pointer;
+    position: absolute;
+    font-size: 80px;
+    top: 120px;
+    right: 10px;
+    background: #fff;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+        rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    z-index: 1001
+}
+#map img{
+    border-radius: 24px;
+    border:10px solid  rgba(72, 202, 228, 0.4);
+}
+.non-active {
+    display:none;
+}
+@keyframes double_bar_navbar {
+    0% { 
+        width: 0% 
+    }
+    10% {
+        width: 10%;
+        right: 90%
+    }
+    12.5% {
+        width: 12.5%;
+        right: 88.5%
+    }
+    25%{
+        width: 25%;
+        left: 12.5%
+    }
+    75% { 
+        width: 75%;
+        left: 12.5%;
+        right: 62.5%;
+    }
+    100% { 
+        width: 75%;
+        left: 12.5%;
+        right: 12.5%;
+    }
+}
+
+@keyframes double_bar_navbar_out {
+    0% { 
+        width: 75%;
+        left: 12.5%;
+        right: 12.5%;
+        border-bottom: solid 2px #fff;
+    }
+    25% {
+        width: 75%;
+        left: 12.5%;
+        right: 62.5%;
+        border-bottom: solid 2px #fff;
+    }
+    75% {
+        width: 25%;
+        left: 12.5%;
+        border-bottom: solid 2px #fff;
+    }
+    88.5%{
+        width: 12.5%;
+        right: 88.5%;
+        border-bottom: solid 2px #fff;
+    }
+    90% { 
+        width: 10%;
+        right: 90%;
+        border-bottom: solid 2px #fff;
+    }
+    100% { 
+        width: 0%;
+        right: 100%;
+        border-bottom: solid 2px #fff;
+    }
+}
+.navbar-logo {
+    width: 128px;
+    margin-left: 32px;
+    margin-top: 8px;
+    margin-right: 12px;
+}
+.navbar-logo-head{
+    float:left;
+}
+.footer_vague {
+    position: absolute;
+    width: 3370px;
+    height: 229px;
+    left: -991px;
+}
+.footer {
+    width: 1440px;
+    height: 229px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+}
+footer {
+    position: relative;
+    background-color: rgba(72, 202, 228, 0.4);
+}
+.footer .copyright {
+    margin-left: 89px;
+    margin-top: 135px;
+    font-family: Be Vietnam Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: #fff;
+    position: absolute;
+    text-decoration: none;
+}
+.footer .legal a {
+    font-family: Be Vietnam Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFFFF;
+    position:absolute;
+    left: 189px;
+    top: 153px;
+}
+.footer .legal .droite {
+    left: 328px;
+    top: 153px;
+}
+.footer .icones {
+    position: absolute;
+    right: 64px;
+    top: 126px;
+}
+.footer .icone {
+    margin-left: 56px;
+    height: 56px;
+    z-index: 10;
+    display: inline-block;
+}
+.hover_bouton:hover::before {
+    -webkit-transform: scale3d(10, 10, 2);
+    transform: scale3d(10, 10, 2);
+}
+.hover_bouton::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin: -16px 1px 1px 3px;
+    width: 270px;
+    height: 66px;
+    border-radius: 50%;
+    background: #48CAE4;;
+    transform-origin: 100% 50%;
+    transform: scale3d(1, 2, 1);
+    transition: transform 0.4s, opacity 0.4s;
+    transition-timing-function: cubic-bezier(0.7,0,0.9,1);
+}
+.hover_bouton {
+    overflow: hidden;
+    transition: color 0.4s linear;
+}
+.hover_bouton:hover {
+    cursor: pointer;
+    color: #fff;
+}
+.reseaux-sociaux img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.footer a img {
+    transition: transform 0.4s;
+}
+.footer a img:hover{
+    transform: scale(1.1);
+}
+
+.nos-partenaires .element:hover{
+    transform: scale(1.1);
+}
+.legal a:hover{
+    text-decoration: none;
+}
+.legal a:hover{
+    transition: transform 0.4s;
+}

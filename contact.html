@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./css/header.css" type="text/css">
+        <link rel="stylesheet" href="./css/evenement.css" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Contact</title>
+        <script>
+            function map() {
+                var mapelement2 = document.getElementById("body");
+                var mapelement3 = document.getElementById("map");
+                if (mapelement3.classList.contains('non-active')){
+                    mapelement2.classList.add("non-active-body");
+                    mapelement3.classList.remove("non-active");
+                } else {
+                    mapelement2.classList.remove("non-active-body");
+                    mapelement3.classList.add("non-active");
+                }
+            }
+        </script>
+        <style>
+            .header {
+                overflow: hidden;
+                width: 1440px;
+                margin-left: auto;
+                margin-right: auto;
+                position: relative;
+                height: 550px;
+                background: linear-gradient(90deg,#fff 0%, rgba(0,0,0,0) 5%,rgba(0,0,0,0) 95%,#fff 100%,#fff), url('img/header image 2.png') no-repeat;
+            }
+            .header-h1 {
+                position: absolute;
+                width: 261px;
+                height: 107px;
+                left: 268px;
+                top: 156px;
+                text-align: center;
+            }
+            .header_vague {
+                position: absolute;
+                width: 3234px;
+                height: 210.11px;
+                left: -842px;
+                top: 384.79px;
+            }
+            body {
+                background-color: #fff;
+            }
+            footer {
+                background-color: #fff;
+            }
+            html {
+                background-color: #fff;
+            }
+        </style>
+    </head>
+
+    <!--le header -->
+    <body id="body" class="">
+        <nav class="navbar">
+            <div class="nav">
+                <div class="navbar-logo-head">
+                    <a href="index.html" class="navbar-logo"><img src="img/logo.png" style="width: 128px;"></a>
+                </div>
+                <div class="navbar-items">
+                    <a href="index.html">Accueil</a>
+                    <a href="evenement.html" class="effet-hover-nav">événement</a>
+                    <a href="inscription.html">Inscription</a>
+                    <a href="marche.html">Marché du sport</a>
+                    <a href="contact.html" class="no-margin active">Contact</a>
+                </div>
+            </div>
+        </nav>
+        <header>
+            <div class="header">
+                <h1></h1>
+                <div class="header-h1">
+                    <h1>Contact</h1>
+                </div>
+                <img src="img/logo-iut.png" class="header-logo-iut">
+                <img src="img/vague_marche.svg" class="header_vague">
+            </div>
+        </header>
+        <section class="mid">
+            <div class="propos">
+                <h1>À propos de nous</h1>
+                <p>L’institut universitaire et technologique implanté sur le littoral Manche-Mer du Nord. Celui de Calais à des étudiants motivés et une équipe pédagogique qui accompagne les étudiants tous au long de leur études. Des intervenants passionnés viennent à l’IUT pour raconter leurs expériences et donner des conseils.</p>
+                <img src="images/contact.png">
+            </div>
+            <div class="contact">
+                <img src="images/iut.png">
+                <div class="oui">
+                    <h1>Nous contacter</h1>
+                </div>
+                <p><span>Télephone</span> : 03 21 19 06 60</p>
+                <p><span>Adresse</span> :Rue Louis David BP 689 62228 Calais cedex</p>
+                <p><span>Email</span> : iutinfo@univ-littoral.fr</p>
+                <p><span>Site de l'IUT</span> : www.iut.univ-littoral.fr</p>
+            <div>
+        </section>
+        <footer>
+            <div class="footer">
+                <img src="img/vague_footer.svg" class="footer_vague">
+                <span class="copyright">© 2021 beach-volley.iut.fr. Tous les droits réservés.</span>
+                <div class="legal">
+                    <a href="mention_legales.html">Mentions légales</a>
+                    <a class="droite" href="cgu.html">CGU</a>
+                </div>
+                <div class="icones">
+                    <a href="https://www.facebook.com/IUTinfoCalais/?ref=page_internal"><img src="img/facebook-icon.png" class="icone"></a>
+                    <a href="https://twitter.com/iutlco_info"><img src="img/twitter-icon.png" class="icone"></a>
+                    <a href="#map" id="mapbouton" onclick="map()" class=""><img src="img/map-icon.png" class="icone"></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <div id="map" class="non-active">
+        <span id="subs-close" onclick="map()" class="close">&times;</span>
+        <img id="map" src="img/map.png"></div>
+    </div>
+</html>

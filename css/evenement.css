@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
+
+* {
+    font-style: normal;
+    font-weight: normal;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    zoom: 80%
+}
+
+h1 {
+    font-size: 40px;
+    font-family: Oswald, sans-serif;
+    margin-bottom: 0;
+    margin-top: 0;
+    border-bottom: solid 4px #F6DC84;
+    display: inline-block;
+    padding-top: 40px;
+}
+
+.mid {
+    width: 1215px;
+    margin: 0 auto;
+}
+
+section {
+    text-align: center;
+}
+
+p {
+    text-align: left;
+    font-size: 24px;
+    line-height: 40px;
+    font-family: Be Vietnam Pro;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.texte1 img {
+    float: right;
+    width: 538px;
+    height: 404px;
+    border: 2px solid #0077B6;
+    box-sizing: border-box;
+    border-radius: 16px;
+    margin-left: 64px;
+}
+
+.texte1 {
+    background-color: rgba(202, 240, 248, 0.5);
+    height: 580px;
+}
+
+.texte2 {
+    background: rgba(202, 240, 248, 0.99);
+    height: 958px;
+}
+
+.texte2 a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+ul {
+    text-align: left;
+    margin-left: 0;
+    font-size: 50px;
+    font-family: Be Vietnam Pro;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+li {
+    margin-bottom: 16px;
+}
+
+h2 {
+    text-align: left;
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 59px;
+}
+
+.texte2 img {
+    float: right;
+    border: 2px solid #0077B6;
+}
+
+.texte2 h2 {
+    margin-top: 56px;
+}
+
+
+.texte3 {
+    background: rgba(202, 240, 248, 0.5);
+    height: 712px;
+}
+
+.texte3 a {
+    display : inline-block;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 16px;
+    width: 1217px;
+    height: 62.61px;
+    color: #48CAE4;
+    text-decoration: none;
+    font-family: Be Vietnam Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 64px;
+    border: 3px solid #48CAE4;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 16px;
+    background-color: white;
+    margin-top: 10px;
+}
+.texte3 a:hover {
+    color: #fff;
+    background-color: #48CAE4;
+    transition: color 0.4s;
+    transition: background-color 0.4s;
+}
+
+.texte4 p {
+    font-size: 24px;  
+    margin-bottom: 38px;
+}
+
+.texte4 {
+    background-color: rgba(202, 240, 248, 0.99);
+    height: 688px;
+}

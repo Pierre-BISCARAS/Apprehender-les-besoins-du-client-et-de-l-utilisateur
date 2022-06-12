@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/header.css">
+        <link rel=stylesheet type="text/css" href="../css/mention.css">
+        <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap%27" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap%27" rel="stylesheet">
+        <title>Mentions Légales</title>
+    </head>
+    <script>
+        function prec() {
+            var element1 = document.getElementById("1");
+            var element2 = document.getElementById("2");
+            var element3 = document.getElementById("3");
+            var element4 = document.getElementById("4");
+            var element5 = document.getElementById("5");
+            var element6 = document.getElementById("6");
+            if (element1.classList.contains('non-active')){
+                element1.classList.remove("non-active");
+                element2.classList.remove("non-active");
+                element3.classList.remove("non-active");
+                element4.classList.add("non-active");
+                element5.classList.add("non-active");
+                element6.classList.add("non-active");
+            } else {
+                element1.classList.add("non-active");
+                element2.classList.add("non-active");
+                element3.classList.add("non-active");
+                element4.classList.remove("non-active");
+                element5.classList.remove("non-active");
+                element6.classList.remove("non-active");
+            }
+        }
+        function suiv() {
+            var element1 = document.getElementById("1");
+            var element2 = document.getElementById("2");
+            var element3 = document.getElementById("3");
+            var element4 = document.getElementById("4");
+            var element5 = document.getElementById("5");
+            var element6 = document.getElementById("6");
+            if (element1.classList.contains('non-active')){
+                element1.classList.remove("non-active");
+                element2.classList.remove("non-active");
+                element3.classList.remove("non-active");
+                element4.classList.add("non-active");
+                element5.classList.add("non-active");
+                element6.classList.add("non-active");
+            } else {
+                element1.classList.add("non-active");
+                element2.classList.add("non-active");
+                element3.classList.add("non-active");
+                element4.classList.remove("non-active");
+                element5.classList.remove("non-active");
+                element6.classList.remove("non-active");
+            }
+        }
+    </script>
+    <script>
+        function map() {
+            var mapelement2 = document.getElementById("body");
+            var mapelement3 = document.getElementById("map");
+            if (mapelement3.classList.contains('non-active')){
+                mapelement2.classList.add("non-active-body");
+                mapelement3.classList.remove("non-active");
+            } else {
+                mapelement2.classList.remove("non-active-body");
+                mapelement3.classList.add("non-active");
+            }
+        }
+    </script>
+    <style>
+        .header {
+                overflow: hidden;
+                width: 1440px;
+                margin-left: auto;
+                margin-right: auto;
+                position: relative;
+                height: 550px;
+                background: linear-gradient(90deg,#fff 0%, rgba(0,0,0,0) 5%,rgba(0,0,0,0) 95%,#fff 100%,#fff), url('img/header image 2.png') no-repeat;
+            }
+        .header-h1 {
+            position: absolute;
+            width: 552px;
+            height: 107px;
+            left: 122px;
+            top: 156px;
+            text-align: center;
+        }
+        .header_vague {
+            position: absolute;
+            width: 3234px;
+            height: 210.11px;
+            left: -842px;
+            top: 384.79px;
+        }
+        body {
+            background-color: #fff;
+        }
+        footer {
+            background-color: #fff;
+        }
+        html {
+            background-color: #fff;
+        }
+    </style>
+    <body id="body" class="">
+        <nav class="navbar">
+            <div class="nav">
+                <div class="navbar-logo-head">
+                    <a href="index.html" class="navbar-logo"><img src="img/logo.png" style="width: 128px;"></a>
+                </div>
+                <div class="navbar-items">
+                    <a href="index.html">Accueil</a>
+                    <a href="evenement.html" class="effet-hover-nav">événement</a>
+                    <a href="inscription.html">Inscription</a>
+                    <a href="marche.html">Marché du sport</a>
+                    <a href="contact.html" class="no-margin">Contact</a>
+                </div>
+            </div>
+        </nav>
+        <header>
+            <div class="header">
+                <h1></h1>
+                <div class="header-h1">
+                    <h1>CGU</h1>
+                </div>
+                <img src="img/logo-iut.png" class="header-logo-iut">
+                <img src="img/vague_marche.svg" class="header_vague">
+            </div>
+        </header>
+
+
+    <section class="mid">
+        <h1>Conditions Générales D’utilisation</h1>
+        
+        <h2>ARTICLE 1. Présentation du site</h2>
+        <p>Le site beach-volley.iut.fr a pour objet : présentation et inscription à un évènement.</p>
+        <h2>Article 2. Contact</h2>
+        <p>Pour toute question ou demande d’information concernant le site, ou tout signalement de contenu ou d’activités illicites, l’utilisateur peut contacter l’éditeur à l’adresse emaail suivante: </p>
+        <p>iutinfo@univ-littoral.fr ou adresser un courrier recommandé avec accusé de réception à </p>
+        <p>IUT du Littoral Côte d’Opale</p>
+        <p>Rue Louis David – BP 689</p>
+        <p>62228 Calais cedex</p>
+        <h2>Article 3. acceptation des conditions d’utilisation</h2>
+        <p>L'accès et l'utilisation du site sont soumis à l'acceptation et au respect des présentes Conditions Générales d'Utilisation. L'éditeur se réserve le droit de modifier, à tout moment et sans préavis, le site et des services ainsi que les présentes CGU, notamment pour s'adapter aux évolutions du site par la mise à disposition de nouvelles fonctionnalités ou la suppression ou la modification de fonctionnalités existantes. Il est donc conseillé à l'utilisateur de se référer avant toute navigation à la dernière version des CGU, accessible à tout moment sur le site. En cas de désaccord avec les CGU, aucun usage du site ne saurait être effectué par l'utilisateur.</p>
+        <h2>ARTICLE 4. ACCÈS ET NAVIGATION</h2>
+        <p>L'éditeur met en œuvre les solutions techniques à sa disposition pour permettre l'accès au site 24 heures sur 24, 7 jours sur 7. Il pourra néanmoins à tout moment suspendre, limiter ou interrompre l'accès au site ou à certaines pages de celui-ci afin de procéder à des mises à jours, des modifications de son contenu ou tout autre action jugée nécessaire au bon fonctionnement du site. La connexion et la navigation sur le site beach-volley.iut.fr valent acceptation sans réserve des présentes Conditions Générales d'Utilisation, quelques soient les moyens techniques d'accès et les terminaux utilisés. Les présentes CGU s'appliquent, en tant que de besoin, à toute déclinaison ou extension du site sur les réseaux sociaux et/ou communautaires existants ou à venir.</p>
+        <h2>ARTICLE 5. GESTION DU SITE</h2>
+        <p>Pour la bonne gestion du site, l'éditeur pourra à tout moment :</p>
+        <p>- suspendre, interrompre ou limiter l'accès à tout ou partie du site, réserver l'accès au site, ou à certaines parties du site, à une catégorie déterminée d'internaute ;</p>
+        <p>- supprimer toute information pouvant en perturber le fonctionnement ou entrant en contravention avec les lois nationales ou internationales, ou avec les règles de la Nétiquette ;</p>
+        <p>- suspendre le site afin de procéder à des mises à jour.</p>
+        <h2>ARTICLE 6. PROPRIÉTÉ INTELLECTUELLE</h2>
+        <p>La structuration du site mais aussi les textes, graphiques, images, photographies, sons, vidéos et applications informatiques qui le composent sont la propriété de l'éditeur et sont protégés comme tels par les lois en vigueur au titre de la propriété intellectuelle. Toute représentation, reproduction, adaptation ou exploitation partielle ou totale des contenus, marques déposées et services proposés par le site, par quelque procédé que ce soit, sans l'autorisation préalable, expresse et écrite de l'éditeur, est strictement interdite et serait susceptible de constituer une contrefaçon au sens des articles L.</p>
+        <p>335-2 et suivants du Code de la propriété intellectuelle. Et ce, à l'exception des éléments expressément désignés comme libres de droits sur le site. L'accès au site ne vaut pas reconnaissance d'un droit et, de manière générale, ne confère aucun droit de propriété intellectuelle relatif à un élément du site, lesquels restent la propriété exclusive de l'éditeur. Il est interdit à l'utilisateur d'introduire des données sur le site qui modifieraient ou qui seraient susceptibles d'en modifier le contenu ou l'apparence.</p>
+        <h2>ARTICLE 7. LIENS HYPERTEXTES</h2>
+        <p>Le site peut contenir des liens hypertextes pointant vers d'autres sites internet sur lesquels beach-volley.iut.fr n'exerce pas de contrôle. Malgré les vérifications préalables et régulières réalisés par l'éditeur, celui-ci décline tout responsabilité quant aux contenus qu'il est possible de trouver sur ces sites. L'éditeur autorise la mise en place de liens hypertextes vers toute page ou document de son site sous réserve que la mise en place de ces liens ne soit pas réalisée à des fins commerciales ou publicitaires. En outre, l'information préalable de l'éditeur du site est nécessaire avant toute mise en place de lien hypertexte. Sont exclus de cette autorisation les sites diffusant des informations à caractère illicite, violent, polémique, pornographique, xénophobe ou pouvant porter atteinte à la sensibilité du plus grand nombre. Enfin, beach-volley.iut.fr se réserve le droit de faire supprimer à tout moment un lien hypertexte pointant vers son site, si le site l'estime non conforme à sa politique éditoriale.</p>
+        <h2>ARTICLE 8. COLLECTE DE DONNÉES</h2>
+        <p>Le site est exempté de déclaration à la Commission Nationale Informatique et Libertés (CNIL) dans la mesure où il ne collecte aucune donnée concernant les utilisateurs.</p>
+        <h2>ARTICLE 9. COOKIES</h2>
+        <p>Le site a éventuellement recours aux techniques de "cookies" lui permettant de traiter des statistiques et des informations sur le trafic, de faciliter la navigation et d'améliorer le service pour le confort de l'utilisateur, lequel peut s'opposer à l'enregistrement de ces "cookies" en configurant son logiciel de navigation.</p>
+        <h2>ARTICLE 10. PROPRIÉTÉ INTELLECTUELLE</h2>
+        <p>La structuration du site mais aussi les textes, graphiques, images, photographies, sons, vidéos et applications informatiques qui le composent sont la propriété de l'éditeur et sont protégés comme tels par les lois en vigueur au titre de la propriété intellectuelle. Toute représentation, reproduction, adaptation ou exploitation partielle ou totale des contenus, marques déposées et services proposés par le site, par quelque procédé que ce soit, sans l'autorisation préalable, expresse et écrite de l'éditeur, est strictement interdite et serait susceptible de constituer une contrefaçon au sens des articles L. </p>
+        <p class="bas">335-2 et suivants du Code de la propriété intellectuelle. Et ce, à l'exception des éléments expressément désignés comme libres de droits sur le site. L'accès au site ne vaut pas reconnaissance d'un droit et, de manière générale, ne confère aucun droit de propriété intellectuelle relatif à un élément du site, lesquels restent la propriété exclusive de l'éditeur. Il est interdit à l'utilisateur d'introduire des données sur le site qui modifieraient ou qui seraient susceptibles d'en modifier le contenu ou l'apparence. </p>
+        <p>Le site beach-volley.iut.fr vous souhaite une scellente navigation !</p>
+    </section>
+    <footer>
+        <div class="footer" style="margin-top:197px;">
+            <img src="img/vague_footer.svg" class="footer_vague">
+            <span class="copyright">© 2021 beach-volley.iut.fr. Tous les droits réservés.</span>
+            <div class="legal">
+                <a href="mention_legales.html">Mentions légales</a>
+                <a class="droite" href="cgu.html">CGU</a>
+            </div>
+            <div class="icones">
+                <a href="https://www.facebook.com/IUTinfoCalais/?ref=page_internal"><img src="img/facebook-icon.png" class="icone"></a>
+                <a href="https://twitter.com/iutlco_info"><img src="img/twitter-icon.png" class="icone"></a>
+                <a href="#map" id="mapbouton" onclick="map()" class=""><img src="img/map-icon.png" class="icone"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+<div id="map" class="non-active">
+    <span id="subs-close" onclick="map()" class="close">&times;</span>
+    <img id="map" src="img/map.png"></div>
+</div>
+</html>

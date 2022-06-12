@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/inscription.css" type="text/css">
+    <link rel="stylesheet" href="css/header.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Evaluation</title>
+    <link rel="icon" type="image/png" href="img/logo.png">
+</head>
+<script>
+    function prec() {
+        var element1 = document.getElementById("1");
+        var element2 = document.getElementById("2");
+        var element3 = document.getElementById("3");
+        var element4 = document.getElementById("4");
+        var element5 = document.getElementById("5");
+        var element6 = document.getElementById("6");
+        if (element1.classList.contains('non-active')){
+            element1.classList.remove("non-active");
+            element2.classList.remove("non-active");
+            element3.classList.remove("non-active");
+            element4.classList.add("non-active");
+            element5.classList.add("non-active");
+            element6.classList.add("non-active");
+        } else {
+            element1.classList.add("non-active");
+            element2.classList.add("non-active");
+            element3.classList.add("non-active");
+            element4.classList.remove("non-active");
+            element5.classList.remove("non-active");
+            element6.classList.remove("non-active");
+        }
+    }
+    function suiv() {
+        var element1 = document.getElementById("1");
+        var element2 = document.getElementById("2");
+        var element3 = document.getElementById("3");
+        var element4 = document.getElementById("4");
+        var element5 = document.getElementById("5");
+        var element6 = document.getElementById("6");
+        if (element1.classList.contains('non-active')){
+            element1.classList.remove("non-active");
+            element2.classList.remove("non-active");
+            element3.classList.remove("non-active");
+            element4.classList.add("non-active");
+            element5.classList.add("non-active");
+            element6.classList.add("non-active");
+        } else {
+            element1.classList.add("non-active");
+            element2.classList.add("non-active");
+            element3.classList.add("non-active");
+            element4.classList.remove("non-active");
+            element5.classList.remove("non-active");
+            element6.classList.remove("non-active");
+        }
+    }
+</script>
+<script>
+    function map() {
+        var mapelement2 = document.getElementById("body");
+        var mapelement3 = document.getElementById("map");
+        if (mapelement3.classList.contains('non-active')){
+            mapelement2.classList.add("non-active-body");
+            mapelement3.classList.remove("non-active");
+        } else {
+            mapelement2.classList.remove("non-active-body");
+            mapelement3.classList.add("non-active");
+        }
+    }
+</script>
+<style>
+    .header-h1 {
+        position: absolute;
+        width: 374px;
+        height: 107px;
+        left: 211px;
+        top: 156px;
+        text-align: center;
+    }
+    .header_vague {
+        position: absolute;
+        width: 3448px;
+        height: 182.09px;
+        left: -900px;
+        top: 353px;
+    }
+    footer{
+        background: #CAF0F8;
+    }
+    .hover_bouton:hover::before {
+        -webkit-transform: scale3d(10, 10, 2);
+        transform: scale3d(10, 10, 2);
+    }
+    .hover_bouton::before {
+        content: '';
+        z-index: -1;
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        margin: -16px 1px 1px 3px;
+        width: 270px;
+        height: 66px;
+        border-radius: 50%;
+        background: #48CAE4;;
+        transform-origin: 100% 50%;
+        transform: scale3d(1, 2, 1);
+        transition: transform 0.4s, opacity 0.4s;
+        transition-timing-function: cubic-bezier(0.7,0,0.9,1);
+    }
+    .hover_bouton {
+        overflow: hidden;
+        transition: color 0.4s linear;
+    }
+    .hover_bouton:hover {
+        cursor: pointer;
+        color: #fff;
+    }
+</style>
+<!--le header -->
+<body id="body" class="">
+    <nav class="navbar">
+        <div class="nav">
+            <div class="navbar-logo-head">
+                <a href="index.html" class="navbar-logo"><img src="img/logo.png" style="width: 128px;"></a>
+            </div>
+            <div class="navbar-items">
+                <a href="index.html">Accueil</a>
+                <a href="evenement.html" class="effet-hover-nav">événement</a>
+                <a href="inscription.html" class="active">Inscription</a>
+                <a href="marche.html">Marché du sport</a>
+                <a href="contact.html" class="no-margin">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="header">
+            <h1></h1>
+            <div class="header-h1">
+                <h1>Inscription</h1>
+            </div>
+            <img src="img/logo-iut.png" class="header-logo-iut">
+            <img src="img/vague_inscription.svg" class="header_vague">
+        </div>
+    </header>
+
+<!--le bloc -->
+
+<div class="titree">
+    <h1>Inscris-toi !!!</h1>
+</div>
+
+<form>
+    <img src="images/inscription.png">
+    <div class="titre">
+        <h1>Inscrivez-vous à l’évènement</h1>
+        <h2>Le 6 et 7 Septembre 2022</h2>
+    </div>
+    <div class="inscription">
+        <div class="prenom">
+            <label for="Prenom">Prénom*</label>
+            <input type="text" id="Prenom">
+        </div>
+        <div class="nom">
+            <label for="nom">Nom*</label>
+            <input type="text" id="nom">
+        </div>
+        <div class="email">
+            <label for="email">Email*</label>
+            <input type="text" id="email">
+        </div>
+        <div class="genre">
+            <label for="genre">Genre*</label>
+            <select id="genre" class="select">
+                <option></option>
+                <option>Homme</option>
+                <option>Femme</option>
+                <option>Autres</option>
+            </select>
+        </div>
+        <div class="departement">
+            <label for="departement">Département*</label>
+            <select id="departement" class="select">
+                <option></option>
+                <option>Informatique</option>
+                <option>GEII</option>
+                <option>GEA</option>
+                <option>MCG</option>
+                <option>DIM</option>
+                <option>AST</option>
+                <option>EICIM</option>
+            </select>
+        </div>
+        <div class="checkbox1">
+            <input type="checkbox">
+            <label>Voulez-vous être Arbitre ?</label>
+        </div>
+        <div class="checkbox2">
+            <input type="checkbox">
+            <label>Acceptez-vous les <a href="cgu.html">conditions d’utilisations ?</a></label>
+        </div>
+        <div class="soumettre hover_bouton">
+            <input type="submit" value="Soumettre">
+        </div>
+        <div class="texte">
+            <p>* Saisie obligatoire </p>
+            <p>Clôturassions des inscriptions le 5 septembre 2022</p>
+        </div>
+    </div>
+</form>
+<footer>
+    <div class="footer" style="margin-top:197px;">
+        <img src="img/vague_footer.svg" class="footer_vague">
+        <span class="copyright">© 2021 beach-volley.iut.fr. Tous les droits réservés.</span>
+        <div class="legal">
+            <a href="mention_legales.html">Mentions légales</a>
+            <a class="droite" href="cgu.html">CGU</a>
+        </div>
+        <div class="icones">
+            <a href="https://www.facebook.com/IUTinfoCalais/?ref=page_internal"><img src="img/facebook-icon.png" class="icone"></a>
+            <a href="https://twitter.com/iutlco_info"><img src="img/twitter-icon.png" class="icone"></a>
+            <a href="#map" id="mapbouton" onclick="map()" class=""><img src="img/map-icon.png" class="icone"></a>
+        </div>
+    </div>
+</footer>
+</body>
+<div id="map" class="non-active">
+<span id="subs-close" onclick="map()" class="close">&times;</span>
+<img id="map" src="img/map.png"></div>
+</div>
+</html>

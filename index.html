@@ -1,0 +1,302 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1.0">
+
+        <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap%27">
+        <link rel="stylesheet"href="'https://fonts.googleapis.com/css2?family=Oswald&display=swap%27">
+        <link rel="stylesheet" type="text/css" href="css/header.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        
+        <link rel="icon" type="image/png" href="img/logo.png">
+
+        <title>Site de l'évènement de l'IUT</title>
+        <script>
+            function prec() {
+                var element1 = document.getElementById("1");
+                var element2 = document.getElementById("2");
+                var element3 = document.getElementById("3");
+                var element4 = document.getElementById("4");
+                var element5 = document.getElementById("5");
+                var element6 = document.getElementById("6");
+                if (element1.classList.contains('non-active')){
+                    element1.classList.remove("non-active");
+                    element2.classList.remove("non-active");
+                    element3.classList.remove("non-active");
+                    element4.classList.add("non-active");
+                    element5.classList.add("non-active");
+                    element6.classList.add("non-active");
+                } else {
+                    element1.classList.add("non-active");
+                    element2.classList.add("non-active");
+                    element3.classList.add("non-active");
+                    element4.classList.remove("non-active");
+                    element5.classList.remove("non-active");
+                    element6.classList.remove("non-active");
+                }
+            }
+            function suiv() {
+                var element1 = document.getElementById("1");
+                var element2 = document.getElementById("2");
+                var element3 = document.getElementById("3");
+                var element4 = document.getElementById("4");
+                var element5 = document.getElementById("5");
+                var element6 = document.getElementById("6");
+                if (element1.classList.contains('non-active')){
+                    element1.classList.remove("non-active");
+                    element2.classList.remove("non-active");
+                    element3.classList.remove("non-active");
+                    element4.classList.add("non-active");
+                    element5.classList.add("non-active");
+                    element6.classList.add("non-active");
+                } else {
+                    element1.classList.add("non-active");
+                    element2.classList.add("non-active");
+                    element3.classList.add("non-active");
+                    element4.classList.remove("non-active");
+                    element5.classList.remove("non-active");
+                    element6.classList.remove("non-active");
+                }
+            }
+        </script>
+        <script>
+            function map() {
+                var mapelement2 = document.getElementById("body");
+                var mapelement3 = document.getElementById("map");
+                if (mapelement3.classList.contains('non-active')){
+                    mapelement2.classList.add("non-active-body");
+                    mapelement3.classList.remove("non-active");
+                } else {
+                    mapelement2.classList.remove("non-active-body");
+                    mapelement3.classList.add("non-active");
+                }
+            }
+        </script>
+        <style>
+            * {
+                margin-block-start: 0em;
+                margin-block-end: 0em;
+                margin-inline-start: 0px;
+                margin-inline-end: 0px;
+            }
+            .non-active-body {
+                z-index: 9999;
+                opacity: 50;
+            }
+            #map {
+                width: 1200px;
+                height: auto;
+                position:absolute;
+                top: 100px;
+                left: 0; 
+                right: 0; 
+                margin-left: auto; 
+                margin-right: auto; 
+                z-index: 1000;
+                box-shadow: 0px 0px 5000px 5000px rgba(0, 0, 0, 0.2);
+            }
+            #map .close {
+                cursor: pointer;
+                position: absolute;
+                font-size: 90px;
+                top: 120px;
+                right: 10px;
+                background: #fff;
+                height: 100px;
+                width: 100px;
+                text-align: center;
+                border-radius: 10px;
+                box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+                    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+                z-index: 1001
+            }
+            #map img{
+                border-radius: 24px;
+                border:10px solid  rgba(72, 202, 228, 0.4);
+            }
+            .non-active {
+                display:none;
+            }
+            .nos-partenaires .global .nop {
+                width: 320px;
+                height: 336px;
+                background: transparent;
+                border: 0px solid transparent;
+                box-sizing: border-box;
+                border-radius: 16px;
+                transition: transform 0.4s;
+            }
+            section h2 {
+                font-family: Oswald;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 40px;
+                line-height: 59px;
+                text-align: center;
+            }
+            section h2::after {
+                content: '';
+                display: inherit;
+                width: 25%;
+                margin: 0px auto;
+                border-bottom: solid 4px #F6DC84;
+            }
+            section.presentation-iut p, section.but-de-l-evenement p {
+                line-height: 40px !important;
+            }
+        </style>
+    </head>
+    <body id="body" class="">
+        <nav class="navbar">
+            <div class="nav">
+                <div class="navbar-logo-head">
+                    <a href="index.html" class="navbar-logo"><img src="img/logo.png" style="width: 128px;"></a>
+                </div>
+                <div class="navbar-items">
+                    <a href="index.html" class="active">Accueil</a>
+                    <a href="evenement.html" class="effet-hover-nav">événement</a>
+                    <a href="inscription.html">Inscription</a>
+                    <a href="marche.html">Marché du sport</a>
+                    <a href="contact.html" class="no-margin">Contact</a>
+                </div>
+            </div>
+        </nav>
+        <header>
+            <div class="header">
+                <h1></h1>
+                <div class="header-h1">
+                    <h1>IUT Championship Beach-Volley</h1>
+                </div>
+                <div class="header-h2">
+                    <h2>L’évènement sportif de l’année !</h2>
+                </div>
+                <img src="img/logo-iut.png" class="header-logo-iut">
+                <img src="img/vague_header.svg" class="header_vague">
+                <a href="inscription.html"><button class="CTA hover_bouton">Inscris-toi !</button></a>
+            </div>
+        </header>
+        <div class="heart"></div>
+        <section class="presentation-iut">
+            <div class="container">
+                <div class="row">
+                    <h2>Presentation IUT</h2>
+                    <img src="img/iut-devant.png" class="image">
+                    <p>L'IUT du Littoral Côte d'Opale créée en 1966 afin de répondre aux besoins de l’économie français. 
+                        L'IUT du Littoral Côte d'Opale propose plusieurs formation (GACO, GEA, TC, GEII, informatique, GIM, BIO, GTE) 
+                        dans quatre villes différentes Saint-Omer, Calais, Boulogne-Sur-Mer, Dunkerque. 
+                        Vous obtenez un diplôme d’État reconnu par le monde de l’entreprise.  Les différents formations sont 
+                        proposées en altérnances ou bien même à l’étranger.</p>
+                </div>
+            </div>
+        </section>
+        <section class="but-de-l-evenement">
+            <div class="container">
+                <div class="row">
+                    <h2>But de l’evenement</h2>
+                    <img src="img/jeu-plage-accueil.png" class="image">
+                    <p>Afin que nos jeunes étudiants intégrent notre IUT dans de bonnes conditions, nous avons imaginés une journée 
+                        sportive afin de leurs donner du challenge. Ces étudiants devront s’amuser et se surpasser pour remporter 
+                        ces manches de Beach Volley. Cette évènement aura aussi un but non-lucratif, avec l’ensemble des bénéfices 
+                        réalisés lors de cette session de jeu serons reversés à l’association LPA de calais afin de protéger
+                        les animaux de la région de Calais.</p>
+                    <a href="evenement.html"><button class="bouton hover_bouton">En savoir plus</button></a>
+                </div>
+            </div>
+        </section>
+        <section class="nos-partenaires">
+            <div class="container">
+                <div class="row">
+                    <h2>Nos partenaires</h2>
+                    <img id="gauche" onclick="prec()" src="img/ligne-suivant.png" style="transform: rotate(180deg);">
+                    <div class="global">
+                        <div id="1" class="element">
+                            <a href="https://www.decathlon.fr/">
+                                <img src="img/decathlon.png">
+                                <h3>Decathlon</h3>
+                                <p>
+                                    Decathlon Calais est au coeur de notre évènement pour nous soutenir avec des équipements de qualités.
+                                </p>
+                            </a>
+                        </div>
+                        <div id="2" class="element">
+                            <a href="https://www.google.fr/search?q=boulangerie+LaMothe+calais&btnK=Recherche+Google">
+                                <img src="img/LaMotte.png">
+                                <h3>Boulangerie LaMothe</h3>
+                                <p>
+                                    La Boulangerie LaMothe est une boulangerie excellente et en face de notre IUT.
+                                </p>
+                            </a>
+                        </div>
+                        <div id="3" class="element">
+                            <a href="https://www.carrefour.fr/">
+                                <img src="img/carrefour.png">
+                                <h3>Carrefour</h3>
+                                <p>
+                                    Carrefour est un franchisé qui permet la vente en grande surface de produits.
+                                </p>
+                            </a>
+                        </div>
+                        <div id="4" class="element non-active">
+                            <a href="https://www.calais.fr/fr/">
+                                <img src="img/calais.png">
+                                <h3>Mairie de calais</h3>
+                                <p>
+                                    La mairie de calais, c'est l'endroit ou la ville de calais est dirigée, par madame Natacha Bouchart.
+                                </p>
+                            </a>
+                        </div>
+                        <div id="5" class="element non-active">
+                            <a href="https://www.lpa-calais.org/">
+                                <img src="img/lpa.png">
+                                <h3>LPA</h3>
+                                <p>
+                                    La Ligue de Protection des Animaux est une association qui permet de soutenir le sauvetages de phoques.
+                                </p>
+                            </a>
+                        </div>
+                        <div id="6" class="nop non-active">
+                        </div>
+                    </div>
+                    <img id="droite" onclick="suiv()" src="img/ligne-suivant.png">
+                </div>
+            </div>
+        </section>
+        <section class="reseaux-sociaux">
+            <div class="container">
+                <div class="row">
+                    <h2>Actualités IUT</h2>
+                    <div class="un_x_3A">
+                        <a href="https://www.facebook.com/IUTinfoCalais/photos/4639348352823597"><img src="img/facebook1.png" class="image"></a>
+                        <a href="https://www.facebook.com/IUTinfoCalais/photos/4586241114800988"><img src="img/facebook2.png" class="image milieu"></a>
+                        <a href="https://www.facebook.com/IUTinfoCalais/photos/4666302703461495"><img src="img/facebook3.png" class="image"></a>
+                    </div>
+                    <div class="un_x_3B">
+                        <a href="https://www.facebook.com/IUTinfoCalais/photos/4666302746794824"><img src="img/facebook4.png" class="image"></a>
+                        <a href="https://www.facebook.com/IUTinfoCalais/photos/4742115962546835"><img src="img/facebook5.png" class="image milieu"></a>
+                        <a href="https://www.facebook.com/IUTinfoCalais/photos/4742117082546723"><img src="img/facebook6.png" class="image"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer">
+                <img src="img/vague_footer.svg" class="footer_vague">
+                <span class="copyright">© 2021 beach-volley.iut.fr. Tous les droits réservés.</span>
+                <div class="legal">
+                    <a href="mention_legales.html">Mentions légales</a>
+                    <a class="droite" href="cgu.html">CGU</a>
+                </div>
+                <div class="icones">
+                    <a href="https://www.facebook.com/IUTinfoCalais/?ref=page_internal"><img src="img/facebook-icon.png" class="icone"></a>
+                    <a href="https://twitter.com/iutlco_info"><img src="img/twitter-icon.png" class="icone"></a>
+                    <a href="#map" id="mapbouton" onclick="map()" class=""><img src="img/map-icon.png" class="icone"></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <div id="map" class="non-active">
+        <span id="subs-close" onclick="map()" class="close">&times;</span>
+        <img id="map" src="img/map.png"></div>
+    </div>
+</html>
